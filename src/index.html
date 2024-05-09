@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Random Card Generator</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -12,17 +12,49 @@
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
-  <body>
+  <body class="bg-success">
     <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+      <header class="mt-5 d-flex justify-content-center">
+        <img src="./pic-cor-removebg-preview.png" alt="" / style="height: 55px;"
+        class="px-3">
+        <h1>RANDOM CARD GENERATOR</h1>
+        <img src="./diam-treb-removebg-preview.png" alt="" / style="height:
+        55px;" class="px-3">
+      </header>
+
+      <div class="d-flex justify-content-center my-5">
+        <div
+          class="card mt-4 shadow-lg "
+          style="width: 22rem;height: 450px; border-radius: 15px;"
+        >
+          <div class="card-body">
+            <!-- Top de la carta -- palo -->
+            <div class="row ">
+              <div class="col d-flex justify-content-start">
+                <h1 class="card-suit" style="font-size:80px;">♠</h1>
+              </div>
+            </div>
+            <!-- centro de la carta -- numero -->
+            <div class="row">
+              <div class="col d-flex justify-content-center my-2">
+                <h1 id="card-value" style="font-size:150px;">A</h1>
+              </div>
+            </div>
+            <!-- Bottom de la carta -- palo -->
+            <div class="row">
+              <div class="col  d-flex justify-content-end">
+                <h1 class="card-suit" style="font-size:80px;">♠</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <button id="card-generator" type="button" class="btn btn-light">
+            GENERATE A NEW CARD
+          </button>
+        </div>
       </div>
     </div>
   </body>
